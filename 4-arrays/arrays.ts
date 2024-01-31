@@ -16,4 +16,5 @@ carMakers.map((car: string): string => {
   return car.toUpperCase(); //knowing that we receive a str and return a str, ts loads for us the str methods
 });
 
-const importantDates = [new Date(), '2030-10-10'];
+//flexible type
+const importantDates: (Date | string)[] = [new Date(), '2030-10-10'];
